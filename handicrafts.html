@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Essence of India - Handicrafts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #f7a300;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            color: white;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        .navbar-nav a {
+            color: white;
+            font-size: 1.2rem;
+        }
+        .navbar-nav a:hover {
+            background-color: #ff9f00;
+        }
+        .section-container {
+            margin-bottom: 50px;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+        .section-content {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .photo-item {
+            width: calc(33% - 20px);
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: #fff;
+            transition: box-shadow 0.3s ease;
+        }
+        .photo-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .photo-item p {
+            text-align: center;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+        .photo-item:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Gallery styles */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Grid layout for 2 columns */
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .gallery-item {
+            text-align: center;
+            border: 2px solid #ddd; /* Border around each box */
+            padding: 10px;
+            border-radius: 8px;
+            background-color: white;
+        }
+
+        .gallery img {
+            /* Ensures images take up full width of their container */
+            height: 250px; /* Fixed height for images */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            border-radius: 8px;
+        }
+
+        .gallery-item p {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .category-title {
+            font-size: 2rem;
+            margin-top: 40px;
+            font-family: 'Playfair Display', serif;
+            color: #f7a300;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Essence of India</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">The Essence of India</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="spirituality.html">Spirituality</a></li>
+                <li class="nav-item"><a class="nav-link" href="traditions.html">Traditions</a></li>
+                <li class="nav-item"><a class="nav-link" href="culture.html">Culture</a></li>
+                <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+                <li class="nav-item"><a class="nav-link" href="festivalcalender.html">Food</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container my-5">
+        <!-- Handicraft Photo Gallery -->
+        <div class="section-container">
+            <h2 class="section-title">Handicrafts of India</h2>
+            <p class="section-content">
+                India is famous for its diverse range of handicrafts. These intricate and beautiful crafts vary across regions, from the delicate embroidery of Kashmir to the vibrant pottery of Rajasthan. Indian handicrafts showcase the artistic skills, creativity, and craftsmanship that have been passed down through generations.
+            </p>
+            <p class="section-content">
+                Some of the popular handicrafts include Pashmina shawls, Madhubani paintings, wooden carvings, and metal works. These items not only reflect the rich heritage of the country but also make for unique souvenirs and gifts.
+            </p>
+        </div>
+        <!-- GI TAGS OF INDIA -->
+        <div class="section-container">
+            <h3 class="section-title">GI TAGS OF INDIA</h3>
+            <div class="photo-gallery">
+                <div class="photo-item">
+                    <img src="gitag for handicrafts.png" alt="GI TAGS OF INDIA">
+                    <p>GI TAGS OF INDIA</p>
+                </div>
+                <div class="photo-item">
+                    <img src="gitag for handicrafts telangana.jpg" alt="GI TAGS OF TELANGANA">
+                    <p>GI TAGS OF TELANGANA</p>
+                </div>
+            </div>
+        </div>
+        <!-- Woolen Crafts -->
+        <div class="section-container">
+            <h3 class="section-title">Woolen Crafts</h3>
+            <div class="photo-gallery">
+                <div class="photo-item">
+                    <img src="Pashmina Shawl.jpg" alt="Pashmina Shawl">
+                    <p>Pashmina Shawl</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Pashmina Shawl2.jpg" alt="Pashmina Shawl">
+                    <p>Pashmina Shawl</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Pashmina Shawl3.jpg" alt="Pashmina Shawl">
+                    <p>Pashmina Shawl</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Kashmir Woolen Blanket.jpg" alt="Kashmir Woolen Blanket">
+                    <p>Kashmir Woolen Blanket</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Kashmir Woolen Blanket2.jpg" alt="Kashmir Woolen Blanket">
+                    <p>Kashmir Woolen Blanket</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Kashmir Woolen Blanket3.jpg" alt="Kashmir Woolen Blanket">
+                    <p>Kashmir Woolen Blanket</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Kullu Shawl.jpg" alt="Kullu Shawl">
+                    <p>Kullu Shawl</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Woolen Carpets.jpg" alt="Woolen Carpets">
+                    <p>Woolen Carpets</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Madhubani Art -->
+        <div class="section-container">
+            <h3 class="section-title">Madhubani Art</h3>
+            <div class="photo-gallery">
+                <div class="photo-item">
+                    <img src="Madhubani Painting 1.jpg" alt="Madhubani Painting 1">
+                    <p>Madhubani Painting </p>
+                </div>
+                <div class="photo-item">
+                    <img src="Madhubani Painting 2.jpg" alt="Madhubani Painting 2">
+                    <p>Madhubani Painting </p>
+                </div>
+                <div class="photo-item">
+                    <img src="madhubani panting3.jpg" alt="Madhubani Painting 2">
+                    <p>Madhubani Painting </p>
+                </div>
+                <div class="photo-item">
+                    <img src="Madhubani artwork.jpg" alt="Madhubani Art Craft">
+                    <p>Madhubani Art Craft</p>
+                </div>
+                <div class="photo-item">
+                    <img src="madhubani artwork1.jpg" alt="Madhubani Art Craft">
+                    <p>Madhubani Art Craft</p>
+                </div>
+                <div class="photo-item">
+                    <img src="madhubani artwork3.jpg" alt="Madhubani Art Craft">
+                    <p>Madhubani Art Craft</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wooden Crafts -->
+        <div class="section-container">
+            <h3 class="section-title">Wooden Crafts</h3>
+            <div class="photo-gallery">
+                <div class="photo-item">
+                    <img src="Wooden Carvings 1.jpg" alt="Wooden Carvings 1">
+                    <p>Wooden Carvings </p>
+                </div>
+                <div class="photo-item">
+                    <img src="Wooden Carvings 2.jpg" alt="Wooden Carvings 1">
+                    <p>Wooden Carvings </p>
+                </div>
+                <div class="photo-item">
+                    <img src="Wooden Carvings 3.jpg" alt="Wooden Carvings 1">
+                    <p>Wooden Carvings </p>
+                </div>
+                <div class="photo-item">
+                    <img src="Wooden Masks1.jpg" alt="Wooden Masks">
+                    <p>Wooden Masks</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Wooden Masks2.jpg" alt="Wooden Masks">
+                    <p>Wooden Masks</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Wooden Masks3.jpg" alt="Wooden Masks">
+                    <p>Wooden Masks</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Wooden Toys kondapalli g20.jpg" alt="Wooden Toys">
+                    <p>Wooden Toys</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Wooden Toys kondapalli1.jpg" alt="Wooden Toys">
+                    <p>Wooden Toys</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Wooden Toys kondapalli2.jpg" alt="Wooden Toys">
+                    <p>Wooden Toys</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Metal Work -->
+        <div class="section-container">
+            <h3 class="section-title">Metal Work</h3>
+            <div class="photo-gallery">
+                <div class="photo-item">
+                    <img src="Brass Metal Work1.jpg" alt="Brass Metal Work">
+                    <p>Brass Metal Work</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Brass Metal Work2.jpg" alt="Brass Metal Work">
+                    <p>Brass Metal Work</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Brass Metal Work3.jpg" alt="Brass Metal Work">
+                    <p>Brass Metal Work</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Bidriware g20.jpg" alt="Bidriware">
+                    <p>Bidriware</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Bidriware1.jpg" alt="Bidriware">
+                    <p>Bidriware</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Bidriware2.jpg" alt="Bidriware">
+                    <p>Bidriware</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Copper Bell Metal1.jpg" alt="Copper Bell Metal">
+                    <p>Copper Bell Metal</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Copper Bell Metal2.jpg" alt="Copper Bell Metal">
+                    <p>Copper Bell Metal</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pottery -->
+        <div class="section-container">
+            <h3 class="section-title">Pottery</h3>
+            <div class="photo-gallery">
+                <div class="photo-item">
+                    <img src="Blue Pottery1.jpg" alt="Blue Pottery">
+                    <p>Blue Pottery</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Blue Pottery2.jpg" alt="Blue Pottery">
+                    <p>Blue Pottery</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Blue Pottery3.jpg" alt="Blue Pottery">
+                    <p>Blue Pottery</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Terracotta Pottery.jpg" alt="Terracotta Pottery">
+                    <p>Terracotta Pottery</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Terracotta Pottery2.jpg" alt="Terracotta Pottery">
+                    <p>Terracotta Pottery</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Terracotta Pottery3.jpg" alt="Terracotta Pottery">
+                    <p>Terracotta Pottery</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Kumartuli Pottery1.jpg" alt="Kumartuli Pottery">
+                    <p>Kumartuli Pottery</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Kumartuli Pottery2.jpg" alt="Kumartuli Pottery">
+                    <p>Kumartuli Pottery</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Kumartuli Pottery3.jpg" alt="Kumartuli Pottery">
+                    <p>Kumartuli Pottery</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rajasthani Crafts -->
+        <div class="section-container">
+            <h3 class="section-title">Rajasthani Crafts</h3>
+            <div class="photo-gallery">
+                <div class="photo-item">
+                    <img src="Block Printing1.jpg" alt="Block Printing">
+                    <p>Block Printing</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Block Printing2.jpg" alt="Block Printing">
+                    <p>Block Printing</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Block Printing3.jpg" alt="Block Printing">
+                    <p>Block Printing</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Jaipur Rugs1.jpg" alt="Jaipur Rugs">
+                    <p>Jaipur Rugs</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Jaipur Rugs2.jpg" alt="Jaipur Rugs">
+                    <p>Jaipur Rugs</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Jaipur Rugs3.jpg" alt="Jaipur Rugs">
+                    <p>Jaipur Rugs</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Rajasthani Handicrafts1.jpg" alt="Rajasthani Handicrafts">
+                    <p>Rajasthani Handicrafts</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Rajasthani Handicrafts2.jpg" alt="Rajasthani Handicrafts">
+                    <p>Rajasthani Handicrafts</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Rajasthani Handicrafts3.jpg" alt="Rajasthani Handicrafts">
+                    <p>Rajasthani Handicrafts</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Rajasthani Handicrafts4.jpg" alt="Rajasthani Handicrafts">
+                    <p>Rajasthani Handicrafts</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Silk Weaving -->
+        <div class="section-container">
+            <h3 class="section-title">Silk Weaving</h3>
+            <div class="photo-gallery">
+                <div class="photo-item">
+                    <img src="Kanchipuram Silk1.jpg" alt="Kanchipuram Silk">
+                    <p>Kanchipuram Silk</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Kanchipuram Silk2.jpg" alt="Kanchipuram Silk">
+                    <p>Kanchipuram Silk</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Kanchipuram Silk3.jpg" alt="Kanchipuram Silk">
+                    <p>Kanchipuram Silk</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Tussar Silk1.jpg" alt="Tussar Silk">
+                    <p>Tussar Silk</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Tussar Silk2.jpg" alt="Tussar Silk">
+                    <p>Tussar Silk</p>
+                </div>
+                <div class="photo-item">
+                    <img src="Tussar Silk3.jpg" alt="Tussar Silk">
+                    <p>Tussar Silk</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 essence of india. All rights reserved. | <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a></p>
+        <p>CREATED BY T.JAYA SURYA REDDY & TEAM </p>
+        <p>Contact us: <a href="mailto:info@theessenceofindia.com">info@theessenceofindia.com</a></p>
+        <p>Follow us: <a href="#">Instagram</a>, <a href="#">Facebook</a>, <a href="#">YouTube</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

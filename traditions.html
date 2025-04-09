@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The Essence of India - Traditions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #f7a300;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            color: white;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        .navbar-nav a {
+            color: white;
+            font-size: 1.2rem;
+        }
+        .navbar-nav a:hover {
+            background-color: #ff9f00;
+        }
+        .section-container {
+            margin-bottom: 50px;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+        .section-content {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .photo-item {
+            width: calc(33% - 20px);
+            margin-bottom: 20px;
+        }
+        .photo-item img {
+        width: 100%;  /* Ensures the image takes up the full width of the container */
+        height: auto;  /* Maintains the aspect ratio of the image */
+        border-radius: 8px;  /* Keeps the rounded corners */
+        object-fit: cover;  /* Ensures the image covers the area without distortion */
+        }
+
+        .photo-item p {
+            text-align: center;
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+        }
+        .container {
+            padding: 20px;
+        }
+
+        .calendar-header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .calendar-table {
+            width: 110%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .calendar-table th,
+        .calendar-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .calendar-table th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .calendar-table td {
+            background-color: #fff;
+        }
+
+        .festival {
+            color: #FF5733;
+            font-weight: bold;
+        }
+
+        .festival-description {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .festival-details {
+            margin-top: 10px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .calendar-header {
+                font-size: 18px;
+            }
+
+            .calendar-table th,
+            .calendar-table td {
+                padding: 8px;
+            }
+        }
+
+        header {
+            background: #f7a300;
+            padding: 20px 0;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+            color: white;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        .navbar-nav a {
+            color: white;
+            font-size: 1.2rem;
+        }
+        .navbar-nav a:hover {
+            background-color: #ff9f00;
+        }
+        .section-container {
+            margin-bottom: 50px;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-family: 'Playfair Display', serif;
+        }
+        .section-content {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .gallery {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);  /* Adjust to 3 columns for better image distribution */
+     gap: 15px;  /* Adjusts the spacing between items */
+     margin-top: 30px;
+     }
+
+        /* Styling for each gallery item */
+        .gallery-item {
+            text-align: center;
+            border: 2px solid #ddd; /* Border around each box */
+            padding: 10px;
+            border-radius: 8px;
+            background-color: white;
+        }
+
+        .gallery img {
+             /* Ensures images take up full width of their container */
+            height: 200px; /* Fixed height for images */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+        }
+        .gallery-item p {
+            font-size: 1rem;
+            margin-top: 10px;
+        }
+
+        .category-title {
+            font-size: 2rem;
+            margin-top: 40px;
+            font-family: 'Playfair Display', serif;
+            color: #f7a300;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Essence of India</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">The Essence of India</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="spirituality.html">Spirituality</a></li>
+                <li class="nav-item"><a class="nav-link" href="culture.html">Culture</a></li>
+                <li class="nav-item"><a class="nav-link" href="handicrafts.html">Handicrafts</a></li>
+                <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+                <li class="nav-item"><a class="nav-link" href="festivalcalender.html">Food</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container my-5">
+        <div class="section-container">
+            <h2 class="section-title">Traditions & Festivals</h2>
+            <p class="section-content">
+                India is home to a multitude of festivals, each celebrated with immense joy and devotion. Festivals like Diwali, Holi, and Durga Puja are not only vibrant but also carry deep cultural and religious significance. These festivals highlight the country's rich traditions and unity in diversity.
+            </p>
+        </div>
+        <div class="calendar-header">
+            Hindu Festival Calendar - 2025, 2026, and 2027
+        </div>
+        <!-- Calendar table -->
+        <div class="container">
+            <h1>Festival Calendar 2025 - 2027</h1>
+        <!-- Calendar table -->
+        <table class="calendar-table">
+            <thead>
+                <tr>
+                    <th scope="col">Festival</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Tradition</th>
+                    <th scope="col">Food</th>
+                    <th scope="col">Date (2025)</th>
+                    <th scope="col">Date (2026)</th>
+                    <th scope="col">Date (2027)</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><span class="festival">Makar Sankranti</span></td>
+                <td class="festival-description">Celebration of the Sun's transition into Capricorn. Known for flying kites in some regions.</td>
+                <td>Flying kites, bonfires</td>
+                <td>Puran Poli, Tilgul (sesame and jaggery sweets)</td>
+                <td>January 14th, 2025</td>
+                <td>January 14th, 2026</td>
+                <td>January 14th, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Republic Day</span></td>
+                <td class="festival-description">India's national holiday celebrating the adoption of the Constitution of India.</td>
+                <td>Parades, patriotic events</td>
+                <td>Traditional Indian sweets and snacks, such as Laddus, Samosas, and Chai</td>
+                <td>January 26th, 2025</td>
+                <td>January 26th, 2026</td>
+                <td>January 26th, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Holi</span></td>
+                <td class="festival-description">Festival of colors, celebrating the arrival of spring and the victory of good over evil.</td>
+                <td>Throwing colored powders, bonfires</td>
+                <td>Gujiya, Thandai, Dahi Vada</td>
+                <td>March 14th, 2025</td>
+                <td>March 2nd, 2026</td>
+                <td>March 20th, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Vasantha Panchami</span></td>
+                <td class="festival-description">A festival celebrating the arrival of spring, associated with the worship of Saraswati, the goddess of learning.</td>
+                <td>Worship of Saraswati, prayers, and cultural events</td>
+                <td>Sweetmeats, Kesar Peda</td>
+                <td>February 9th, 2025</td>
+                <td>February 19th, 2026</td>
+                <td>February 28th, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Shivaji Jayanti</span></td>
+                <td class="festival-description">Celebration of the birth of Maratha king Shivaji Maharaj.</td>
+                <td>Processions, cultural programs</td>
+                <td>Puran Poli, Shrikhand</td>
+                <td>February 19th, 2025</td>
+                <td>February 19th, 2026</td>
+                <td>February 19th, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Maha Shivaratri</span></td>
+                <td class="festival-description">A night dedicated to the worship of Lord Shiva, marked by fasting and night vigils.</td>
+                <td>Fasting, night vigils, temple visits</td>
+                <td>Bael leaves, fruits, and milk offerings</td>
+                <td>February 26th, 2025</td>
+                <td>February 17th, 2026</td>
+                <td>March 7th, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Ugadi</span></td>
+                <td class="festival-description">The New Year festival celebrated in parts of South India.</td>
+                <td>Eating traditional foods, prayers</td>
+                <td>Ugadi Pachadi (a special mix of neem leaves, jaggery, and tamarind)</td>
+                <td>March 24th, 2025</td>
+                <td>March 21st, 2026</td>
+                <td>April 8th, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Baisakhi</span></td>
+                <td class="festival-description">A harvest festival celebrated in Punjab and various parts of North India.</td>
+                <td>Harvest celebrations, Gurdwara visits</td>
+                <td>Chole Bhature, Lassi</td>
+                <td>April 14th, 2025</td>
+                <td>April 14th, 2026</td>
+                <td>April 14th, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Rama Navami</span></td>
+                <td class="festival-description">Celebration of the birth of Lord Rama, observed by devotees with prayers and recitation of the Ramayana.</td>
+                <td>Prayer recitals, temple visits</td>
+                <td>Pooran Poli, Fruit Prasadam</td>
+                <td>April 9th, 2025</td>
+                <td>April 1st, 2026</td>
+                <td>April 21st, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Raksha Bandhan</span></td>
+                <td class="festival-description">A celebration of the bond between brothers and sisters. Sisters tie a protective thread around their brother's wrist.</td>
+                <td>Sisters tying rakhi, gifts exchanged</td>
+                <td>Rakhi sweets, especially Kesar Laddoo</td>
+                <td>August 15th, 2025</td>
+                <td>August 4th, 2026</td>
+                <td>August 22nd, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Janmashtami</span></td>
+                <td class="festival-description">Celebration of the birth of Lord Krishna, marked by fasting, devotional singing, and reenactments of Krishna's life.</td>
+                <td>Fasting, bhajans, reenactments</td>
+                <td>Peda, Dahi Puri</td>
+                <td>August 22nd, 2025</td>
+                <td>August 11th, 2026</td>
+                <td>August 29th, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Ganesh Chaturthi</span></td>
+                <td class="festival-description">Celebration of Lord Ganesha’s birth, marked by large processions and installations of idols.</td>
+                <td>Installation of Ganesha idols, processions</td>
+                <td>Laddu, Modak</td>
+                <td>September 17th, 2025</td>
+                <td>September 6th, 2026</td>
+                <td>September 25th, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Onam</span></td>
+                <td class="festival-description">Harvest festival celebrated mainly in Kerala, marking the return of King Mahabali.</td>
+                <td>Feasts, boat races, floral decorations</td>
+                <td>Onam Sadya (traditional Kerala feast with various curries, rice, and payasam)</td>
+                <td>August 30th, 2025</td>
+                <td>September 18th, 2026</td>
+                <td>September 8th, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Dussehra</span></td>
+                <td class="festival-description">Commemorates the victory of Lord Rama over the demon king Ravana.</td>
+                <td>Burning of effigies, processions</td>
+                <td>Rava Laddoo, Halwa</td>
+                <td>October 22nd, 2025</td>
+                <td>October 21st, 2026</td>
+                <td>October 9th, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Diwali</span></td>
+                <td class="festival-description">The festival of lights, celebrating the victory of light over darkness, and good over evil. It is marked by lighting oil lamps, fireworks, and feasts.</td>
+                <td>Lighting lamps, fireworks, feasts</td>
+                <td>Kaju Katli, Gulab Jamun</td>
+                <td>November 14th, 2025</td>
+                <td>November 3rd, 2026</td>
+                <td>October 22nd, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Gurpurab</span></td>
+                <td class="festival-description">Celebration of the birth of Guru Nanak, the founder of Sikhism.</td>
+                <td>Processions, prayers</td>
+                <td>Kada Prashad</td>
+                <td>November 25th, 2025</td>
+                <td>November 15th, 2026</td>
+                <td>November 24th, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Gita Jayanti</span></td>
+                <td class="festival-description">Commemorates the day when Lord Krishna imparted the teachings of the Bhagavad Gita to Arjuna.</td>
+                <td>Recitation of the Bhagavad Gita</td>
+                <td>Prasadam (offerings of fruits, sweets)</td>
+                <td>December 25th, 2025</td>
+                <td>December 14th, 2026</td>
+                <td>December 3rd, 2027</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Notes -->
+    <div class="festival-details">
+    
+    <div class="calendar-header">
+        Islamic Festival Calendar - 2025, 2026, and 2027
+    </div>
+    
+    <!-- Calendar table -->
+    <table class="calendar-table">
+        <thead>
+            <tr>
+                <th scope="col">Festival</th>
+                <th scope="col">Description</th>
+                <th scope="col">Tradition</th>
+                <th scope="col">Date (2025)</th>
+                <th scope="col">Date (2026)</th>
+                <th scope="col">Date (2027)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Festivals -->
+            <tr>
+                <td><span class="festival">Eid al-Fitr</span></td>
+                <td class="festival-description">Celebration marking the end of Ramadan, a month of fasting. It is a time for family gatherings, feasts, and charity.</td>
+                <td>Family gatherings, prayers, charity</td>
+                <td>April 20th, 2025</td>
+                <td>April 10th, 2026</td>
+                <td>March 29th, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Eid al-Adha</span></td>
+                <td class="festival-description">Commemorates the willingness of Ibrahim (Abraham) to sacrifice his son as an act of obedience to God. It is also the time of the Hajj pilgrimage.</td>
+                <td>Animal sacrifices, prayers, charity</td>
+                <td>July 28th, 2025</td>
+                <td>July 17th, 2026</td>
+                <td>July 6th, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Ramadan</span></td>
+                <td class="festival-description">A month-long period of fasting from dawn to sunset to commemorate the first revelation of the Quran to Prophet Muhammad.</td>
+                <td>Fasting from dawn to sunset, nightly prayers (Taraweeh)</td>
+                <td>March 26th - April 24th, 2025</td>
+                <td>March 15th - April 13th, 2026</td>
+                <td>March 4th - April 2nd, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Islamic New Year (Hijri New Year)</span></td>
+                <td class="festival-description">Marks the beginning of the Islamic lunar calendar year, commemorating the migration (Hijra) of the Prophet Muhammad from Mecca to Medina.</td>
+                <td>Prayers, reflection</td>
+                <td>July 19th, 2025</td>
+                <td>July 8th, 2026</td>
+                <td>June 27th, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Mawlid al-Nabi</span></td>
+                <td class="festival-description">Celebration of the birth of Prophet Muhammad, with processions, prayers, and lectures on his life and teachings.</td>
+                <td>Prayers, readings from the Quran, processions</td>
+                <td>October 17th, 2025</td>
+                <td>October 28th, 2026</td>
+                <td>October 18th, 2027</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="calendar-header">
+        Christian Festival Calendar - 2025, 2026, and 2027
+    </div>
+    
+    <!-- Calendar table -->
+    <table class="calendar-table">
+        <thead>
+            <tr>
+                <th scope="col">Festival</th>
+                <th scope="col">Description</th>
+                <th scope="col">Tradition</th>
+                <th scope="col">Date (2025)</th>
+                <th scope="col">Date (2026)</th>
+                <th scope="col">Date (2027)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Festivals -->
+            <tr>
+                <td><span class="festival">Christmas</span></td>
+                <td class="festival-description">Celebrates the birth of Jesus Christ. It is a time for family gatherings, feasts, and gift-giving.</td>
+                <td>Church services, family gatherings, gift-giving</td>
+                <td>December 25th, 2025</td>
+                <td>December 25th, 2026</td>
+                <td>December 25th, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Easter</span></td>
+                <td class="festival-description">Commemorates the resurrection of Jesus Christ from the dead, observed after the period of Lent and Good Friday.</td>
+                <td>Church services, feasts, Easter egg hunts</td>
+                <td>April 20th, 2025</td>
+                <td>April 5th, 2026</td>
+                <td>March 28th, 2027</td>
+            </tr>
+            <tr>
+                <td><span class="festival">Good Friday</span></td>
+                <td class="festival-description">Observes the crucifixion and death of Jesus Christ, part of the Holy Week celebrations.</td>
+                <td>Church services, fasting, reflection</td>
+                <td>April 18th, 2025</td>
+                <td>April 3rd, 2026</td>
+                <td>March 26th, 2027</td>
+            </tr>
+        </tbody>
+    </table>
+<!-- Note section -->
+<div class="festival-details">
+    <h3>Note:</h3>
+    <p>The dates for Christian festivals may vary slightly depending on the denomination and local observations. In India, these festivals are celebrated with various regional customs and traditions.</p>
+</div>
+<div class="section-container">
+    <h2 class="category-title">Festivals Of INDIA</h2>
+<div class="container">
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="diwali.jpg" alt="Photo 1">
+            <p>Diwali - The Festival of Lights</p>
+        </div>
+        <div class="gallery-item">
+            <img src="diwali1.jpg" alt="Photo 2">
+        
+        </div>
+        <div class="gallery-item">
+            <img src="fireworks-535198_1920.jpg" alt="Photo 3">
+        </div>
+        <div class="gallery-item">
+            <img src="happy-holi-hai-8636532_1280.jpg" alt="Festival Image 2">
+            <p>Holi - Festival of Colors</p>
+        </div>
+        <div class="gallery-item">
+            <img src="party-4926252_1280.jpg" alt="Festival Image 2">
+            <p>Holi - Festival of Colors</p>
+        </div>
+        <div class="gallery-item">
+            <img src="the-festival-of-colors-2475521_1280.jpg" alt="Festival Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="woman-5907621_1280.jpg" alt="Festival Image 3">
+            <p>Durga Puja - Celebrating Goddess Durga</p>
+        </div>
+        <div class="gallery-item">
+            <img src="navarathri.jpg" alt="Festival Image 3">
+            <p>Navratri - Nine Nights Festival</p>
+        </div>
+        <div class="gallery-item">
+            <img src="navarathri1.jpg" alt="Festival Image 3">
+            <p>Navratri - Nine Nights Festival</p>
+        </div>
+        <div class="gallery-item">
+            <img src="dusshera.jpg" alt="Festival Image 3">  
+        </div>
+        <div class="gallery-item">
+            <img src="dusshera1.jpg" alt="Festival Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="ganesh.jpg" alt="Festival Image 5">
+            <p>Ganesh Chaturthi - Honoring Lord Ganesha</p>
+        </div>
+        <div class="gallery-item">
+            <img src="ganesh1.jpg" alt="Festival Image 5">
+            <p>Ganesh Chaturthi - Honoring Lord Ganesha</p>
+        </div>
+        <div class="gallery-item">
+            <img src="onam.jpg" alt="Festival Image 7">
+            <p>Onam - Harvest Festival in Kerala</p>
+        </div>
+        <div class="gallery-item">
+            <img src="onam1.jpg" alt="Festival Image 7">
+            <p>Onam - Harvest Festival in Kerala</p>
+        </div>
+        <div class="gallery-item">
+            <img src="sankranthi.jpg" alt="Festival Image 3">  
+        </div>
+        <div class="gallery-item">
+            <img src="sankranthi1.jpg" alt="Festival Image 3">  
+        </div>
+        <div class="gallery-item">
+            <img src="raksha bandhan.jpg" alt="Festival Image 10">
+            <p>Raksha Bandhan - Celebrating Sibling Bond</p>
+        </div>
+        <div class="gallery-item">
+            <img src="raksha bandhan1.jpg" alt="Festival Image 3"> 
+        </div>
+        <div class="gallery-item">
+            <img src="gita.jpg" alt="Festival Image 3">  
+        </div>
+        <div class="gallery-item">
+            <img src="githa.jpg" alt="Festival Image 3">  
+        </div>    
+        <div class="gallery-item">
+            <img src="krishnastami.jpg" alt="Festival Image 3">  
+        </div>
+        <div class="gallery-item">
+            <img src="krishnastami1.jpg" alt="Festival Image 3">  
+        </div>
+        <div class="gallery-item">
+            <img src="Lord Ganesha.jpg" alt="Festival Image 3"> 
+        </div>  
+        <div class="gallery-item">
+            <img src="rama navami.jpg" alt="Festival Image 3"> 
+        </div>
+        <div class="gallery-item">
+            <img src="rama navami1.jpg" alt="Festival Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="baisakhi.jpg" alt="Festival Image 3"> 
+        </div>  
+
+    <div class="gallery-item">
+        <img src="baisakhi1.jpg" alt="Festival Image 3">  
+    </div>
+    <div class="gallery-item">
+        <img src="vasantha panchami.jpg" alt="Festival Image 3">  
+    </div>    
+    <div class="gallery-item">
+        <img src="vasantha panchami1.jpg" alt="Festival Image 3"> 
+    </div>
+    <div class="gallery-item">
+        <img src="republic day.jpg" alt="Festival Image 3">  
+    </div>
+    <div class="gallery-item">
+        <img src="republic day1.jpg" alt="Festival Image 3">  
+    </div>  
+    <div class="gallery-item">
+        <img src="ugadhi 2.jpg" alt="Festival Image 3">  
+    </div>
+    <div class="gallery-item">
+            <img src="ugadhi.jpg" alt="Festival Image 3">  
+    </div>
+    <div class="gallery-item">
+        <img src="christmas-4695973_1280.jpg" alt="Festival Image 3">  
+    </div>
+    <div class="gallery-item">
+        <img src="eid.jpg" alt="Image 5">
+        <p>Eid: Celebration of Unity and Faith</p>
+    </div>
+    <div class="gallery-item">
+        <img src="eid1.jpg" alt="Image 5">
+        <p>Eid: Celebration of Unity and Faith</p>
+    </div>
+    <div class="gallery-item">
+        <img src="table-4718533_1280.jpg" alt="Festival Image 3">  
+    </div>
+    <div class="gallery-item">
+        <img src="christmas-4631194_1280.jpg" alt="Festival Image 3"> 
+    </div>
+    <div class="gallery-item">
+        <img src="christmas-6832802_1280.jpg" alt="Festival Image 3">  
+    </div>  
+    <div class="gallery-item">
+        <img src="ramdan.jpg" alt="Image 5">
+        <p>Eid: Celebration of Unity and Faith</p>
+    </div>
+    <div class="gallery-item">
+        <img src="ramdan2.jpg" alt="Image 5">
+        <p>Eid: Celebration of Unity and Faith</p>
+    </div>
+    <div class="gallery-item">
+        <img src="ramdan3.jpg" alt="Image 5">
+        <p>ramdan</p>
+    </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 essence of india. All rights reserved. | <a href="/privacy-policy">Privacy Policy</a> | <a href="/terms-of-service">Terms of Service</a></p>
+        <p>CREATED BY T.JAYA SURYA REDDY & TEAM </p>
+        <p>Contact us: <a href="mailto:info@theessenceofindia.com">info@theessenceofindia.com</a></p>
+        <p>Follow us: <a href="#">Instagram</a>, <a href="#">Facebook</a>, <a href="#">YouTube</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
