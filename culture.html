@@ -102,6 +102,45 @@ footer {
     font-size: 1rem;
     margin-top: 10px;
 }
+/*video section*/
+.video-container {
+            width: 600px;
+            height: 350px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #000;
+            position: relative;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-controls {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .video-controls button,
+        .video-controls select {
+            margin: 0 5px;
+            padding: 5px 10px;
+            background-color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .video-container:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
 
     </style>
 </head>
@@ -140,6 +179,118 @@ footer {
 <!-- Culture Videos Section -->
 <div class="section-container">
     <h2 class="category-title">Indian Culture Videos</h2>
+    <div class="gallery">
+
+        <!-- Video 1 -->
+        <div class="video-container">
+            <video id="video1" controls muted>
+                <source src="largestpen.mp4" type="video/mp4">
+                Your browser does support the video tag.
+            </video>
+            <div class="video-controls">
+                <button onclick="toggleMute('video1')">Mute/Unmute</button>
+                <label for="speed1">Speed:</label>
+                <select id="speed1" onchange="changeSpeed('video1')">
+                    <option value="0.5">0.5x</option>
+                    <option value="1" selected>1x (Normal)</option>
+                    <option value="1.5">1.5x</option>
+                    <option value="2">2x</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-container">
+            <video id="video2" controls muted>
+                <source src="tribals.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-controls">
+                <button onclick="toggleMute('video2')">Mute/Unmute</button>
+                <label for="speed2">Speed:</label>
+                <select id="speed2" onchange="changeSpeed('video2')">
+                    <option value="0.5">0.5x</option>
+                    <option value="1" selected>1x (Normal)</option>
+                    <option value="1.5">1.5x</option>
+                    <option value="2">2x</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-container">
+            <video id="video3" controls muted>
+                <source src="tribal culture.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-controls">
+                <button onclick="toggleMute('video3')">Mute/Unmute</button>
+                <label for="speed3">Speed:</label>
+                <select id="speed3" onchange="changeSpeed('video3')">
+                    <option value="0.5">0.5x</option>
+                    <option value="1" selected>1x (Normal)</option>
+                    <option value="1.5">1.5x</option>
+                    <option value="2">2x</option>
+                </select>
+            </div>
+        </div>
+                <!-- Video 4 -->
+                <div class="video-container">
+                    <video id="video1" controls muted>
+                        <source src="culture.mp4" type="video/mp4">
+                        Your browser does support the video tag.
+                    </video>
+                    <div class="video-controls">
+                        <button onclick="toggleMute('video1')">Mute/Unmute</button>
+                        <label for="speed1">Speed:</label>
+                        <select id="speed1" onchange="changeSpeed('video1')">
+                            <option value="0.5">0.5x</option>
+                            <option value="1" selected>1x (Normal)</option>
+                            <option value="1.5">1.5x</option>
+                            <option value="2">2x</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <!-- Video 2 -->
+                <div class="video-container">
+                    <video id="video2" controls muted>
+                        <source src="culture1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-controls">
+                        <button onclick="toggleMute('video2')">Mute/Unmute</button>
+                        <label for="speed2">Speed:</label>
+                        <select id="speed2" onchange="changeSpeed('video2')">
+                            <option value="0.5">0.5x</option>
+                            <option value="1" selected>1x (Normal)</option>
+                            <option value="1.5">1.5x</option>
+                            <option value="2">2x</option>
+                        </select>
+                    </div>
+                </div>
+        
+                <!-- Video 3 -->
+                <div class="video-container">
+                    <video id="video3" controls muted>
+                        <source src="millets-Trim.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-controls">
+                        <button onclick="toggleMute('video3')">Mute/Unmute</button>
+                        <label for="speed3">Speed:</label>
+                        <select id="speed3" onchange="changeSpeed('video3')">
+                            <option value="0.5">0.5x</option>
+                            <option value="1" selected>1x (Normal)</option>
+                            <option value="1.5">1.5x</option>
+                            <option value="2">2x</option>
+                        </select>
+                    </div>
+                </div>
+
+        <!-- Add more videos following the same structure -->
+
+    </div>
 </div>
 <!-- Cuisine Videos Section -->
 <div class="section-container">
@@ -171,7 +322,7 @@ footer {
                 </p>
             </a>
         </div>
-        <div class="video-item">
+        <div class="gallery-item">
             <a href="https://youtu.be/qevTQyH2V_g?feature=shared" target="_blank">
                 
                 <p>Traditional Indian Thali
@@ -179,7 +330,7 @@ footer {
                 </p>
             </a>
         </div>
-        <div class="video-item">
+        <div class="gallery-item">
             <a href="https://youtu.be/-OOjy4PdswM?feature=shared" target="_blank">
                 
                 <p>Traditional Indian Prasadams Thali
@@ -187,7 +338,7 @@ footer {
                 </p>
             </a>
         </div>
-        <div class="video-item">
+        <div class="gallery-item">
             <a href="https://www.youtube.com/watch?v=dsJWDEdmMa4" target="_blank">
                 
                 <p>Traditional Indian Prasadams Thali
@@ -195,7 +346,7 @@ footer {
                 </p>
             </a>
         </div>
-        <div class="video-item">
+        <div class="gallery-item">
             <a href="https://youtu.be/QAr6dw4RElU?feature=shared" target="_blank">
                 
                 <p>Traditional Sankranthi Special Recipes Combo 
@@ -203,7 +354,7 @@ footer {
                 </p>
             </a>
         </div>
-        <div class="video-item">
+        <div class="gallery-item">
             <a href="https://youtu.be/85HFpYUbKZM?feature=shared" target="_blank">
                 
                 <p>Traditional Indian prasadams Thali
@@ -211,14 +362,13 @@ footer {
                 </p>
             </a>
         </div>
-        <div class="video-item">
-            <a href="https://youtu.be/EmcJiDu9mJI?feature=shared" target="_blank">
-                
+        <div class="gallery-item">
+            <a href="https://youtu.be/EmcJiDu9mJI?feature=shared" target="_blank">                
                 <p>Traditional Indian prasadams<br> CHEKARA PONGALI</br>
                 </p>
             </a>
         </div>
-        <div class="video-item">
+        <div class="gallery-item">
             <a href="https://youtu.be/dCaAPYvCp2A?feature=shared" target="_blank">
                 
                 <p>Traditional Indian prasadams 
@@ -226,7 +376,7 @@ footer {
                 </p>
             </a>
         </div>
-        <div class="video-item">
+        <div class="gallery-item">
             <a href="https://youtu.be/j3Asnsd_2LE?feature=shared" target="_blank">
                 
                 <p>Traditional Indian prasadams 
@@ -234,7 +384,7 @@ footer {
                 </p>
             </a>
         </div>
-        <div class="video-item">
+        <div class="gallery-item">
             <a href="https://youtu.be/zaoUXvgEM0M?list=PLD2vlKwLAN3C8z7uIyBTBOhjkhfkG3Spp" target="_blank">
                 
                 <p>Traditional Indian prasadams 
@@ -242,7 +392,7 @@ footer {
                 </p>
             </a>
         </div>
-        <div class="video-item">
+        <div class="gallery-item">
             <a href="https://youtu.be/hngNzFgSvYk?list=PLD2vlKwLAN3C8z7uIyBTBOhjkhfkG3Spp" target="_blank">
                 
                 <p>Traditional Indian prasadams 
@@ -250,9 +400,7 @@ footer {
                 </p>
             </a>
         </div>
-
-        
-        <div class="video-item">
+        <div class="gallery-item">       
             <a href="https://youtu.be/jfQ0aVHOPVY?si=oy4ecXdbgw1mtBUt" target="_blank">
                 
                 <p>Traditional Indian prasadams 
@@ -261,35 +409,34 @@ footer {
             </a>
         </div>
 
-        <h4>***These videos are taken from a youtube channel are credits belongs to them.<br> To more vist Food section </h4>
+        <h4><p>***These videos are taken from a youtube channel are credits belongs to them.<br> To more vist Food section</p> </h4>
       
         <h2>INDIAN STREET FOODS</h2>
-        <div class="video-item">
+        <div class="gallery-item">
             <a href="https://www.youtube.com/watch?v=your-video-id2" target="_blank">
                 <img src="thumbnail2.jpg" alt="Making Street Food: Chaat and Samosas">
                 <p>Making Street Food: Chaat and Samosas</p>
             </a>
         </div>
-        <div class="video-item">
+        <div class="gallery-item">
             <a href="https://www.youtube.com/watch?v=your-video-id3" target="_blank">
                 <img src="thumbnail3.jpg" alt="Delicious Indian Biryani Recipe">
                 <p>Delicious Indian Biryani Recipe</p>
             </a>
         </div>
-        <div class="video-item">
+        <div class="gallery-item">
             <a href="https://www.youtube.com/watch?v=your-video-id4" target="_blank">
                 <img src="thumbnail4.jpg" alt="Making Indian Desserts: Gulab Jamun">
                 <p>Making Indian Desserts: Gulab Jamun</p>
             </a>
         </div>
-        <div class="video-item">
+        <div class="gallery-item">
             <a href="https://www.youtube.com/watch?v=your-video-id5" target="_blank">
                 <img src="thumbnail5.jpg" alt="How to Make Indian Tea: Chai">
                 <p>How to Make Indian Tea: Chai</p>
             </a>
         </div>
-        
-        <div class="video-item">
+        <div class="gallery-item">
             <a href="https://youtu.be/Z_CrhktyRsA?feature=shared" target="_blank">
                 
                 <p>Traditional Indian snacks
@@ -297,9 +444,8 @@ footer {
                 </p>
             </a>
         </div>
-        <div class="video-item">
+        <div class="gallery-item">
             <a href="https://youtu.be/_iCo6-x0gOQ?feature=shared" target="_blank">
-                
                 <p>Traditional Indian snacks
                   <br>  JANTHIKALU </br>
                 </p>
@@ -310,32 +456,32 @@ footer {
 <!-- Dance Videos Section -->
 <div class="section-container">
     <h2 class="category-title">Indian Dance Videos</h2>
-    <div class="video-gallery">
-        <div class="video-item">
+    <div class="gallery">
+        <div class="gallery-item">
             <a href="https://www.youtube.com/watch?v=your-video-id1" target="_blank">
                 <img src="dance-thumbnail1.jpg" alt="Classical Dance Performance">
                 <p>Classical Dance Performance</p>
             </a>
         </div>
-        <div class="video-item">
+        <div class="gallery-item">
             <a href="https://www.youtube.com/watch?v=your-video-id2" target="_blank">
                 <img src="dance-thumbnail2.jpg" alt="Bollywood Dance Routine">
                 <p>Bollywood Dance Routine</p>
             </a>
         </div>
-        <div class="video-item">
+        <div class="gallery-item">
             <a href="https://www.youtube.com/watch?v=your-video-id3" target="_blank">
                 <img src="dance-thumbnail3.jpg" alt="Bharatanatyam Dance">
                 <p>Bharatanatyam Dance</p>
             </a>
         </div>
-        <div class="video-item">
+        <div class="gallery-item">
             <a href="https://www.youtube.com/watch?v=your-video-id4" target="_blank">
                 <img src="dance-thumbnail4.jpg" alt="Kathak Dance Performance">
                 <p>Kathak Dance Performance</p>
             </a>
         </div>
-        <div class="video-item">
+        <div class="gallery-item">
             <a href="https://www.youtube.com/watch?v=your-video-id5" target="_blank">
                 <img src="dance-thumbnail5.jpg" alt="Folk Dance Performance">
                 <p>Folk Dance Performance</p>
@@ -360,7 +506,7 @@ footer {
         <h2 class="category-title">TELANGANA Dance Images</h2>
         <div class="gallery-item">
             <img src="telangana dance1.jpg" alt="Classical Dance Performance">
-            <p>TELANGANA Classical Dance Performance</p>
+            <p>TELANGANA'S STATE Dance</p>
         </div>
         <div class="gallery-item">
             <img src="telangana dance2.jpg" alt="Classical Dance Performance">
@@ -369,6 +515,16 @@ footer {
         <div class="gallery-item">
             <img src="telangana dance3.jpg" alt="Classical Dance Performance">
             <p>TELANGANA Classical Dance Performance</p>
+        </div>
+        <h2 class="category-title">TELANGANA Dance Images</h2>
+        <div class="gallery-item">
+            <img src="art1.jpg" alt="Classical Dance Performance">
+            <p>TELANGANA'S STATE Dance</p>
+        </div>
+        <h2 class="category-title">TELANGANA Dance Images</h2>
+        <div class="gallery-item">
+            <img src="art2.jpg" alt="Classical Dance Performance">
+            <p>TELANGANA'S STATE Dance</p>
         </div>
         <h2 class="category-title">OTHER Indian STATES Dance Images</h2>
         <div class="gallery-item">
