@@ -721,9 +721,23 @@ footer {
         <p>Contact us: <a href="mailto:info@theessenceofindia.com">info@theessenceofindia.com</a></p>
         <p>Follow us: <a href="#">Instagram</a>, <a href="#">Facebook</a>, <a href="#">YouTube</a></p>
     </footer>
+    <script>
+        // Function to toggle mute for each video
+        function toggleMute(videoId) {
+            const video = document.getElementById(videoId);
+            video.muted = !video.muted;
+        }
 
+        // Function to change playback speed for each video
+        function changeSpeed(videoId) {
+            const video = document.getElementById(videoId);
+            const speed = document.getElementById(`speed${videoId.slice(-1)}`).value;
+            video.playbackRate = speed;
+        }
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </body>
 </html>
