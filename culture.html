@@ -298,7 +298,23 @@ footer {
                         </select>
                     </div>
                 </div>
-
+                <!-- Video 3 -->
+                <div class="video-container">
+                    <video id="video3" controls muted>
+                        <source src="ramasethu.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-controls">
+                        <button onclick="toggleMute('video3')">Mute/Unmute</button>
+                        <label for="speed3">Speed:</label>
+                        <select id="speed3" onchange="changeSpeed('video3')">
+                            <option value="0.5">0.5x</option>
+                            <option value="1" selected>1x (Normal)</option>
+                            <option value="1.5">1.5x</option>
+                            <option value="2">2x</option>
+                        </select>
+                    </div>
+                </div>
         <!-- Add more videos following the same structure -->
 
     </div>
